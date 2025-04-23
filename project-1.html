@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js mini project-1</title>
+    <link rel="stylesheet" href="project-1.css" />
+  </head>
+  <body>
+    <h1 class="chikudon">created by amitchiku</h1>
+    <div class="container">
+      <h1>password generator</h1>
+      <div class="display-container">
+        <input
+          readonly
+          placeholder=" password"
+          class="display"
+          data-passworddisplay
+        />
+        <button>
+          <span data-copymsg>copied</span>
+          <img
+            src="https://tse2.mm.bing.net/th?id=OIP.XDC4GaEljMXmtjf9giJTWQHaHa&pid=Api&P=0&h=180"
+            alt="chiku img"
+          />
+        </button>
+      </div>
+      <div class="input-container">
+        <div class="length-container">
+          <p>password length</p>
+          <p data-length-container>0</p>
+        </div>
+        <input
+          type="range"
+          min="1"
+          max="20"
+          class="slider"
+          step="1"
+          data-length-slider
+        />
+        <div>
+          <input type="checkbox" id="uppercase" />
+          <label for="uppercase">includes uppercase</label>
+        </div>
+        <div>
+          <input type="checkbox" id="lowercase" />
+          <label for="lowercase">includes lowercase</label>
+        </div>
+        <div>
+          <input type="checkbox" id="numbers" />
+          <label for="numbers">includes numbers</label>
+        </div>
+        <div>
+          <input type="checkbox" id="symbols" />
+          <label for="symbols">includes symbols</label>
+        </div>
+      </div>
+      <div class="strength-container">
+        <p>strength</p>
+        <div data-indicator></div>
+      </div>
+      <button class="generate-button">generate password</button>
+    </div>
+    <script src="project-1.js"></script>
+  </body>
+</html>
